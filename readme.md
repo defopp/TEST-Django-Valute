@@ -1,14 +1,18 @@
-create venv    
+##### create venv    
     py -m venv .\venv
-activate venv
+##### activate venv
     .\venv\Scripts\activate
-install req
+##### install req
     pip install -r requirements.txt
-run server
+##### run server
     cd .\Wallet\
     py manage.py runserver
 
+-----------------------------------
 parserapp/valuteparser.py - Добавить полный путь до БД
 
-Cron строка
+-----------------------------------
+
+
+##### Cron строка
     0 0 * * * python (полный путь до)\KCSG\parserapp\valute_parser.py
